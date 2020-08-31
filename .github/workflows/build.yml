@@ -40,4 +40,7 @@ jobs:
         with:
           java-version: ${{ matrix.java }}
       - name: Build with mvn
-        run: mvn install
+        run: |
+          mvn install
+          cd ./ moduler
+          mvn install

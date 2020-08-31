@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.xenoamess</groupId>
-    <artifactId>commons-proper</artifactId>
+    <artifactId>commons-proper-moduler</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>${project.artifactId}</name>
@@ -31,9 +31,9 @@
         <tag>${project.version}</tag>
     </scm>
 
-<!--    <modules>-->
-<!--        <module>commons-becl</module>-->
-<!--    </modules>-->
+    <modules>
+        <module>../commons-becl</module>
+    </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -49,28 +49,6 @@
         <maven-surefire-plugin.version>3.0.0-M5</maven-surefire-plugin.version>
     </properties>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>com.xenoamess</groupId>
-                <artifactId>add-from-repo-maven-plugin</artifactId>
-                <version>0.0.3</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>addSourcesFromRepo</goal>
-                        </goals>
-                        <configuration>
-                            <repoGitUri>https://gitbox.apache.org/repos/asf/commons-bcel.git</repoGitUri>
-                            <relativeDirectory></relativeDirectory>
-                            <outputDirectory>${project.basedir}/commons-bcel/</outputDirectory>
-                        </configuration>
-                        <phase>initialize</phase>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
     <repositories>
         <repository>
             <id>central</id>
