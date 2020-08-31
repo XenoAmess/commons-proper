@@ -63,7 +63,7 @@
                         <configuration>
                             <repoGitUri>https://github.com/apache/commons-bcel.git</repoGitUri>
                             <relativeDirectory></relativeDirectory>
-                            <outputDirectory>${project.basedir}/commons-bcel/</outputDirectory>
+                            <outputDirectory>module/commons-bcel</outputDirectory>
                         </configuration>
                         <phase>initialize</phase>
                     </execution>
