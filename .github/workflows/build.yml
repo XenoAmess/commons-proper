@@ -42,5 +42,5 @@ jobs:
       - name: Build with mvn
         run: |
           mvn install
-          cd ./ moduler
+          cd ./moduler
           mvn install
