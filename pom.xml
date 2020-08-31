@@ -54,16 +54,41 @@
             <plugin>
                 <groupId>com.xenoamess</groupId>
                 <artifactId>add-from-repo-maven-plugin</artifactId>
-                <version>0.0.3</version>
+                <version>0.0.4</version>
                 <executions>
                     <execution>
+                        <id>commons-bcel</id>
                         <goals>
-                            <goal>addSourcesFromRepo</goal>
+                            <goal>addFromRepo</goal>
                         </goals>
                         <configuration>
                             <repoGitUri>https://github.com/apache/commons-bcel.git</repoGitUri>
                             <relativeDirectory>/</relativeDirectory>
-                            <outputDirectory>module/commons-bcel</outputDirectory>
+                            <outputDirectory>commons-bcel</outputDirectory>
+                        </configuration>
+                        <phase>initialize</phase>
+                    </execution>
+                    <execution>
+                        <id>commons-beanutils</id>
+                        <goals>
+                            <goal>addFromRepo</goal>
+                        </goals>
+                        <configuration>
+                            <repoGitUri>https://github.com/apache/commons-beanutils.git</repoGitUri>
+                            <relativeDirectory>/</relativeDirectory>
+                            <outputDirectory>commons-beanutils</outputDirectory>
+                        </configuration>
+                        <phase>initialize</phase>
+                    </execution>
+                    <execution>
+                        <id>commons-bsf</id>
+                        <goals>
+                            <goal>addFromRepo</goal>
+                        </goals>
+                        <configuration>
+                            <repoGitUri>https://github.com/apache/commons-bsf.git</repoGitUri>
+                            <relativeDirectory>/</relativeDirectory>
+                            <outputDirectory>commons-bsf</outputDirectory>
                         </configuration>
                         <phase>initialize</phase>
                     </execution>
