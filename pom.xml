@@ -61,7 +61,7 @@
                             <goal>addSourcesFromRepo</goal>
                         </goals>
                         <configuration>
-                            <repoGitUri>https://gitbox.apache.org/repos/asf/commons-bcel.git</repoGitUri>
+                            <repoGitUri>https://github.com/apache/commons-bcel.git</repoGitUri>
                             <relativeDirectory></relativeDirectory>
                             <outputDirectory>${project.basedir}/commons-bcel/</outputDirectory>
                         </configuration>
